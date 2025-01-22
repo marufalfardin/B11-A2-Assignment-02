@@ -314,8 +314,8 @@ marquee {
     background: rgb(149, 178, 38);
     border: none;
     padding: 10px 25px;
-    margin-left: -35px;
-    margin-top: -60px;
+    margin-left: 35px;
+    margin-top: -20px;
 }
 
 .blue-date {
@@ -381,8 +381,12 @@ marquee {
     gap: 10px;
 }
 
-
-
+.btn-positioning{
+    display: flex;
+}
+.btn-positioning-02{
+    display: flex;
+}
 
 @media screen and (max-width:576px) {
 
@@ -471,7 +475,10 @@ marquee {
     }
 
     .btn-date {
-        margin-left: -25px;
+        margin-left: 20px;
+        font-weight: 400;
+        padding: 10px 10px;
+        font-size: 0.8rem;
     }
     .footer{
         padding: 65px 15px 60px 20px;
