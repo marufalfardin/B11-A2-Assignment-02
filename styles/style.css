@@ -107,13 +107,14 @@ marquee {
 
 /* Banner-segment */
 
-.banner{
+.banner {
     margin: 0px 141px;
     display: flex;
     gap: 50px;
     align-items: center;
     align-content: center;
 }
+
 .banner-title {
     font-weight: 700;
     font-size: 3.5rem;
@@ -133,6 +134,110 @@ marquee {
     font-weight: 400;
     margin-bottom: 24px;
 }
+
+/* Curriculum section */
+
+.curriculum {
+    background-image: url(../assets/bg.png);
+    text-align: center;
+}
+
+.title {
+    font-size: 2.85rem;
+    font-weight: 700;
+    margin-top: 60px;
+}
+
+.curriculum-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 80px 140px;
+    gap: 28px;
+}
+
+.group-1 {
+    border: 0.94px solid rgb(222, 245, 255);
+    border-radius: 18.86px;
+    box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+    background: linear-gradient(180.00deg, rgb(222, 245, 255), rgba(255, 255, 255, 0) 40%), rgb(255, 255, 255);
+}
+
+.group-2 {
+    box-sizing: border-box;
+    border: 0.94px solid rgb(255, 244, 220);
+    border-radius: 18.86px;
+    box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+    background: linear-gradient(180.00deg, rgb(255, 244, 220), rgba(255, 255, 255, 0) 40%), rgb(255, 255, 255);
+}
+
+.group-3 {
+    box-sizing: border-box;
+    border: 0.94px solid rgb(242, 232, 255);
+    border-radius: 18.86px;
+    box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+    background: linear-gradient(180.00deg, rgb(238, 225, 255), rgba(255, 255, 255, 0) 40%), rgb(255, 255, 255);
+}
+
+.group-image {
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+
+.group-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: rgb(32, 32, 32);
+}
+
+.group-descritption {
+    font-weight: 500;
+    color: rgb(128, 128, 128);
+    margin: 33px 40px 38px 40px;
+}
+
+.btn-group {
+    font-size: 0.95rem;
+    font-weight: 700;
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 58px;
+}
+
+.btn-group-1 {
+    color: rgb(100, 200, 255);
+}
+
+.btn-group-2 {
+    color: rgb(240, 170, 0);
+}
+
+.btn-group-3 {
+    color: rgb(135, 0, 255);
+}
+
+.btn-arrow {
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: rgb(255, 255, 255);
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    background: rgb(254, 163, 1);
+    border: none;
+    cursor: pointer;
+    border: 1px solid rgb(254, 163, 1);
+    margin-right: 10px;
+}
+.btn-arrow:hover {
+    background-color: white;
+    color: black;
+}
+
+
+
+
+
 
 @media screen and (max-width:576px) {
 
@@ -158,20 +263,37 @@ marquee {
         margin: 0px 16px 0 16px;
     }
 
-    .banner{
+    .banner {
         flex-direction: column-reverse;
         margin: 0;
     }
-    .banner-content{
+
+    .banner-content {
         text-align: center;
         padding: 0px 17px;
     }
+
     .banner-title {
         font-size: 2.7rem;
     }
 
-    #banner-image{
+    #banner-image {
         width: calc(100% - 54px);
         margin: 0 27px 0 27px;
+    }
+    /* standard curriculum */
+
+    .curriculum-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin: 0;
+        width: calc(100% - 34px);
+        margin: 20px 17px 0 17px;
+    }
+    .title{
+        font-size: 2rem;
+    }
+    .btn-arrow{
+        display: none;
     }
 }
