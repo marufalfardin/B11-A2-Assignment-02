@@ -228,11 +228,105 @@ marquee {
     cursor: pointer;
     border: 1px solid rgb(254, 163, 1);
     margin-right: 10px;
+    margin-bottom: 60px;
 }
+
 .btn-arrow:hover {
     background-color: white;
     color: black;
 }
+
+/* Our stories section  */
+.srories {
+    background: url(../assets/bg.png), linear-gradient(0.00deg, rgba(254, 163, 1, 0.3), rgba(255, 255, 255, 0.3) 100%);
+    text-align: center;
+    padding-bottom: 60px;
+}
+
+.stories-title {
+    margin-top: 60px;
+}
+
+.sotries-container {
+    display: flex;
+    margin: 80px 140px 80px 140px;
+    gap: 75px;
+}
+
+.mega-container-01 {
+    border-radius: 16px;
+    background: rgb(255, 255, 255);
+    text-align: start;
+}
+
+.mega-container-01-content {
+    padding: 0 39px;
+}
+
+.mega-container-1-info {
+    margin-top: 36px;
+}
+
+.mega-container-1-description {
+    margin-top: 51px;
+    margin-bottom: 34px;
+}
+
+.mega-container-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.mili-container {
+    border-radius: 16px;
+    background: rgb(255, 255, 255);
+    width: 100%;
+}
+
+.btn-date-mega {
+    font-size: 0.95rem;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    border-radius: 47.93px;
+    background: rgb(60, 216, 232);
+    border: none;
+    padding: 15px 25px;
+    margin-top: -30px;
+}
+
+.container-image {
+    border-radius: 16px 16px 0px 0px;
+}
+
+.mini-container-info {
+    margin-top: 23px;
+    margin-bottom: 33px;
+    padding: 0 38px;
+    text-align: start;
+}
+
+.btn-date {
+    font-size: 0.95rem;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    border-radius: 47.93px;
+    background: rgb(149, 178, 38);
+    border: none;
+    padding: 10px 25px;
+    margin-left: -35px;
+    margin-top: -60px;
+}
+
+.blue-date {
+    background: rgb(93, 88, 240);
+}
+
+.mini-container-info {
+    font-size: 0.95rem;
+    font-weight: 700;
+}
+
 
 
 
@@ -281,6 +375,7 @@ marquee {
         width: calc(100% - 54px);
         margin: 0 27px 0 27px;
     }
+
     /* standard curriculum */
 
     .curriculum-container {
@@ -290,10 +385,41 @@ marquee {
         width: calc(100% - 34px);
         margin: 20px 17px 0 17px;
     }
-    .title{
+
+    .title {
         font-size: 2rem;
     }
-    .btn-arrow{
+
+    .btn-arrow {
         display: none;
+    }
+
+    /* stories  */
+    .sotries-container {
+        margin: 20px 0px;
+    }
+
+    .mega-container-01 {
+        display: none;
+    }
+
+    .mega-container-2 {
+        display: grid;
+        max-width: 534px;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        margin: 0px 16px;
+    }
+
+    .container-image {
+        max-width: 100%;
+    }
+
+    .mini-container-info {
+        padding: 20px;
+    }
+
+    .btn-date {
+        margin-left: -25px;
     }
 }
